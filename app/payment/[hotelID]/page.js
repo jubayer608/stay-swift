@@ -1,4 +1,3 @@
-
 import PaymentForm from "@/components/payment/PaymentForm";
 
 const PaymentPage = () => {

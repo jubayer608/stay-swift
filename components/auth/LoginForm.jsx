@@ -1,21 +1,20 @@
-import Image from "next/image";
-
-const SocialLogins = () => {
+const LoginForm = () => {
   return (
-    <>
-      <div className="text-center text-xs text-gray-500">or Signup with</div>
-      <div className="flex gap-4">
-        <button className=" w-full mt-4 py-2 border-gray-600/30 border rounded-md flex items-center gap-2 justify-center">
-          <Image src="/fb.png" alt="facebook" width={40} height={40} />
-          <span>Facebook</span>
-        </button>
-        <button className=" w-full mt-4 py-2 border-gray-600/30 border rounded-md flex items-center gap-2 justify-center">
-          <Image src="/google.png" alt="google" width={40} height={40} />
-          <span>Google</span>
-        </button>
+    <form className="login-form">
+      <div>
+        <label htmlFor="email">Email Address</label>
+        <input type="email" name="email" id="email" />
       </div>
-    </>
+      <div>
+        <label htmlFor="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <button type="submit" className="btn-primary w-full mt-4">
+        Login
+      </button>
+    </form>
   );
 };
 
-export default SocialLogins;
+export default LoginForm;
