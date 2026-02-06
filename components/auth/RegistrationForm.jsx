@@ -5,12 +5,10 @@ const RegistrationForm = () => {
         <label htmlFor="fname">First Name</label>
         <input type="text" name="fname" id="fname" />
       </div>
-
       <div>
         <label htmlFor="lname">Last Name</label>
         <input type="text" name="lname" id="lname" />
       </div>
-
       <div>
         <label htmlFor="email">Email Address</label>
         <input type="email" name="email" id="email" />
